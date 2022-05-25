@@ -1,0 +1,337 @@
+body ul li{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: auto;
+    height: 300px;
+}
+.h1 {
+    font-size: 24px;
+    padding: 10px ;
+}
+
+ /* Cabeçalho */
+
+#header {
+    background: #32CD32;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+#logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#menu {
+    font-size: 20px;
+    display:flex;
+    list-style: none;
+    gap: .5rem;
+    
+}
+
+#menu li {
+    margin-left: 10px;  
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: .5rem;  
+}
+
+#btn-mobile{
+    display: none;
+    color: white;
+}
+
+/* Imagem Inicial */
+#cuidado-img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 40px;
+}
+
+.elementor-divisor {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, rgb(29, 240, 65), transparent);  
+  }
+
+  /* Quem Somos */
+#quemsomos{
+    width: 100%;
+    padding: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#quemsomos h1{
+    font-size: 24px;
+}
+
+.desc-quemsomos {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Serviços */
+
+#servicos{
+    width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1200;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#servicos div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+#servicos h1{
+    font-size: 24px;
+}
+.serv-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100%;
+
+}
+.serv-descricao div {
+    flex: 1 1 400px;
+}
+.imgs-serv {
+    width: auto;
+    height: auto;
+}
+
+.homecare {
+    width: 500px;
+    height: auto;
+    border: 2px 2px black;
+}
+
+/* Trabalhe Conosco */
+
+.trabalhe-conosco {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+
+h1,
+h2 {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h1::before {
+  content: "";
+  display: block;
+}
+
+h2::before {
+  content: "";
+  display: block;
+}
+
+.form {
+    width: 70%;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  
+  .form label,
+  .form input,
+  .form textarea,
+  .form button {
+    display: block;
+    width: 100%;
+  }
+  
+  .form label {
+    color: black;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form input,
+  .form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+  }
+  
+  .form textarea {
+    min-height: 13rem;
+    resize: vertical;
+  }
+  
+  .form input:hover,
+  .form input:focus,
+  .form textarea:hover,
+  .form textarea:focus {
+    outline: none;
+    border-color: #32CD32;
+    box-shadow: 0 0 0 3px #32CD32;
+  }
+  
+  .form button {
+    display: block;
+    padding: 1rem;
+    background: #32CD32;
+    color: black;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .form button:hover,
+  .form button:focus {
+    outline: none;
+    background: #32CD32;
+  }
+
+  .btn-enviar {
+      width: 60px;
+  }
+
+  /* Botão Whatsapp */
+  .whatsapp{
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background: #25d366;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 1px 1px 2px #888;
+      z-index: 1000;
+  }
+
+  .fa-whatsapp {
+      margin-top: 16px;
+      color: white;
+  }
+
+
+
+/* Rodapé */
+
+
+
+
+@media (max-width: 600px) {
+
+    /* Config Nav-Bar */
+
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;   
+        gap: .5rem; 
+    }
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+        
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 70px;
+        right: 0px;
+        text-align: center;
+        background: #008000;
+        z-index: 1000;
+        transition: .3s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #menu a {
+        color: #1d1e20;
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0,0,0,0.05);
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        
+    }
+
+    
+
+}
